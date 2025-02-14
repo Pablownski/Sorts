@@ -25,7 +25,10 @@ public class Main {
 
             // Copias para cada algoritmo
             Integer[] insertionArray = Arrays.copyOf(array, array.length);
-
+            Integer[] mergeArray = Arrays.copyOf(array, array.length);
+            Integer[] quickArray = Arrays.copyOf(array, array.length);
+            Integer[] radixArray = Arrays.copyOf(array, array.length);
+            Integer[] shellArray = Arrays.copyOf(array, array.length);
 
             long startTime, endTime;
             double insertionTime, mergeTime, quickTime, radixTime, shellTime;
@@ -38,25 +41,25 @@ public class Main {
 
             // Merge Sort
             startTime = System.nanoTime();
-        
+            MergeSort.sort(mergeArray);
             endTime = System.nanoTime();
             mergeTime = (endTime - startTime) / 1e6;
 
             // Quick Sort
             startTime = System.nanoTime();
-            
+            QuickSort.sort(quickArray);
             endTime = System.nanoTime();
             quickTime = (endTime - startTime) / 1e6;
 
             // Radix Sort
             startTime = System.nanoTime();
-            
+            RadixSort.sort(radixArray);
             endTime = System.nanoTime();
             radixTime = (endTime - startTime) / 1e6;
 
             // Shell Sort
             startTime = System.nanoTime();
-            
+            ShellSort.sort(shellArray);
             endTime = System.nanoTime();
             shellTime = (endTime - startTime) / 1e6;
 
