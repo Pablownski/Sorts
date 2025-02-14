@@ -19,7 +19,7 @@ public class Main {
         int[] sizes = {10, 100, 300, 500, 700, 900, 1200, 1500, 1800, 2000}; // Tamaños de los arreglos a evaluar
         Random rand = new Random();
 
-        // Encabezado de la tabla de resultados
+        
         System.out.println("Tamaño | InsertionSort (ms) | InsertionSort (Ordenado) | MergeSort (ms) | MergeSort (Ordenado) | QuickSort (ms) | QuickSort (Ordenado) | RadixSort (ms) | RadixSort (Ordenado) | ShellSort (ms) | ShellSort (Ordenado)");
         System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
