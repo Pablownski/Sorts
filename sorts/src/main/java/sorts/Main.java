@@ -3,6 +3,10 @@ package sorts;
 import java.util.Arrays;
 import java.util.Random;
 
+/**
+ * Clase principal que ejecuta y mide el rendimiento de diferentes algoritmos de ordenamiento.
+ */
+
 public class Main {
     public static void main(String[] args) {
         int[] sizes = {10, 100, 300, 500, 700, 900, 1200, 1500, 1800, 2000};
@@ -24,6 +28,7 @@ public class Main {
             long startTime, endTime;
             double insertionTime, insertionTimeSorted, mergeTime, mergeTimeSorted;
             double quickTime, quickTimeSorted, radixTime, radixTimeSorted, shellTime, shellTimeSorted;
+        // Medir el tiempo de ejecución de cada algoritmo
 
             // Insertion Sort (desordenado)
             startTime = System.nanoTime();
